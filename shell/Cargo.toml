@@ -1,0 +1,13 @@
+[package]
+name = "shell"
+version = "0.1.0"
+edition = "2021"
+description = "Gifaros AI-powered natural-language shell"
+
+[[bin]]
+name = "gifaros-shell"
+path = "src/main.rs"
+
+[dependencies]
+ai_core = { path = "../ai_core" }
+kernel = { path = "../kernel" }
