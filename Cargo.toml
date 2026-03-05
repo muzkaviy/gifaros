@@ -1,0 +1,15 @@
+[package]
+name = "gifaros"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# ARM donanımına erişim için yardımcı (isteğe bağlı ama önerilir)
+aarch64-cpu = "9.4.0"
+tock-registers = "0.8.1"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
